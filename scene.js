@@ -37,7 +37,8 @@ const controls = new PointerLockControls(camera, renderer.domElement);
 
 // Click hint
 const hint = document.createElement("div");
-hint.innerHTML = "Click to enter first-person view<br><small>ESC exit · WASD move · Space ascend · Shift descend</small>";
+hint.innerHTML = "Click to enter first-person view<br><small>ESC exit · WASD move · Space ascend · Shift descend</small>" +
+  '<div style="font-size:13px;opacity:0.7;max-width:360px;margin-top:12px;line-height:1.6">From left to right: a rearrangement of the word, my hand-drawn sketches, images refined by ChatGPT based on my sketches, and finally the 3D assets generated with Meshy AI.</div>';
 Object.assign(hint.style, {
   position: "fixed", top: "50%", left: "50%",
   transform: "translate(-50%, -50%)",
